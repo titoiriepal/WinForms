@@ -9,7 +9,7 @@ namespace WinFormsContacts
 {
     class DataAccessLayer
     {
-        private SqlConnection conn = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=ManualContacts;Data Source=DESKTOP-S642E9F\SQLEXPRESS");
+        private SqlConnection conn = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=ManualContacts;Data Source=DESKTOP-S642E9F\\SQLEXPRESS");
 
         public void InsertContacto(Contacto contacto)
         {
@@ -20,7 +20,7 @@ namespace WinFormsContacts
             {
                 conn.Open();
                 string query = @"
-                    INSERT INTO Contactos (Nombre, Apellidos, Telefono, Direccion)
+                    INSERT INTO Contacts (Nombre, Apellidos, Telefono, Direccion)
                     VALUES (@Nombre, @Apellidos, @Telefono, @Direccion);
                 ";
 
@@ -69,7 +69,7 @@ namespace WinFormsContacts
             {
                 conn.Open();
                 string query = @"
-                    UPDATE Contactos SET
+                    UPDATE Contacts SET
                         Nombre = @Nombre,
                         Apellidos = @Apellidos, 
                         Telefono = @Telefono, 
@@ -113,7 +113,7 @@ namespace WinFormsContacts
                 conn.Open();
                 string query = @"
                     SELECT id, Nombre, Apellidos, Telefono, Direccion
-                    FROM Contactos
+                    FROM Contacts
                 ";
 
                 SqlCommand sqlCommand = new SqlCommand(query, conn);
@@ -165,7 +165,7 @@ namespace WinFormsContacts
             try
             {
                 conn.Open();
-                string query = @"DELETE FROM Contactos WHERE id = @Id";
+                string query = @"DELETE FROM Contacts WHERE id = @Id";
 
                 SqlCommand command = new SqlCommand(query, conn);
                 command.Parameters.Add(new SqlParameter("@Id", id));
