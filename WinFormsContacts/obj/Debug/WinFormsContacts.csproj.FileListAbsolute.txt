@@ -1,0 +1,6 @@
+C:\Programacion\Examen3\WinFormsContacts\obj\Debug\WinFormsContacts.csproj.AssemblyReference.cache
+C:\Programacion\Examen3\WinFormsContacts\obj\Debug\WinFormsContacts.Detalles.resources
+C:\Programacion\Examen3\WinFormsContacts\obj\Debug\WinFormsContacts.Main.resources
+C:\Programacion\Examen3\WinFormsContacts\obj\Debug\WinFormsContacts.Properties.Resources.resources
+C:\Programacion\Examen3\WinFormsContacts\obj\Debug\WinFormsContacts.csproj.GenerateResource.cache
+C:\Programacion\Examen3\WinFormsContacts\obj\Debug\WinFormsContacts.csproj.CoreCompileInputs.cache
